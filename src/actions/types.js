@@ -1,0 +1,2 @@
+export const CHECKING_STATUS = "CHECKING_STATUS";
+export const CHECKING_TIME = "CHECKING_TIME";
