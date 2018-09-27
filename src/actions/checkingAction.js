@@ -1,4 +1,4 @@
-import { CHECKING_STATUS, CHECKING_TIME } from "./types";
+import { CHECKING_STATUS, CHECKING_TIME, CHANGING_TEXT } from "./types";
 
 export const checkingStatus = webs => async dispatch => {
   let newWebs = [];
@@ -43,5 +43,12 @@ export const checkingTime = webs => async dispatch => {
   dispatch({
     type: CHECKING_TIME,
     payload: newWebs
+  });
+};
+
+export const changingText = text => dispatch => {
+  dispatch({
+    type: CHANGING_TEXT,
+    payload: text
   });
 };

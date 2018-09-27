@@ -1,6 +1,11 @@
-import { CHECKING_STATUS, CHECKING_TIME } from "../actions/types";
+import {
+  CHECKING_STATUS,
+  CHECKING_TIME,
+  CHANGING_TEXT
+} from "../actions/types";
 
 const initialState = {
+  title: "",
   webs: [
     {
       id: 1,
@@ -43,7 +48,6 @@ const initialState = {
 export default function checkingReducer(state = initialState, action) {
   switch (action.type) {
     case CHECKING_STATUS:
-      console.log("reducer");
       return {
         ...state,
         webs: action.payload
@@ -52,6 +56,11 @@ export default function checkingReducer(state = initialState, action) {
       return {
         ...state,
         webs: action.payload
+      };
+    case CHANGING_TEXT:
+      return {
+        ...state,
+        title: action.payload
       };
     default:
       return state;
