@@ -52,7 +52,7 @@ class AllWebTime extends Component {
 
 AllWebTime.propTypes = {
   changingText: PropTypes.func.isRequired,
-  text: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired
 };
 
 const mapStateToProps = state => ({

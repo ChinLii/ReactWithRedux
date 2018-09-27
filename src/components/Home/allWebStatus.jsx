@@ -51,7 +51,7 @@ class AllWebStatus extends Component {
 
 AllWebStatus.propTypes = {
   changingText: PropTypes.func.isRequired,
-  text: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired
 };
 
 const mapStateToProps = state => ({
